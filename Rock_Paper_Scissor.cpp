@@ -50,13 +50,27 @@ int main(void)
     string sName1;
     string sName2;
 
+#if WIN32
+    system("cls");
+#endif
+
+#if __linux__
+    system("clear");
+#endif
+
     cout << "Enter player 1 name :\n";
     getline(cin, sName1);
 
     cout << "Enter player 2 name :\n";
     getline(cin, sName2);
 
+#if WIN32
     system("cls");
+#endif
+
+#if __linux__
+    system("clear");
+#endif
 
     while (1)
     {
@@ -69,7 +83,13 @@ int main(void)
         break;
     }
 
+#if WIN32
     system("cls");
+#endif
+
+#if __linux__
+    system("clear");
+#endif
 
     while (1)
     {
@@ -78,7 +98,6 @@ int main(void)
         cout << "1. Rock\n2. Paper\n3. Scissor\n>_";
         cin >> iChoice2;
 
-        
         if (iChoice2 < 1 || iChoice2 > 3)
             continue;
         break;
