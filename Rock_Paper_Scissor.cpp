@@ -50,7 +50,7 @@ int main(void)
     string sName1;
     string sName2;
 
-#if WIN32
+#if _WIN32
     system("cls");
 #endif
 
@@ -58,13 +58,13 @@ int main(void)
     system("clear");
 #endif
 
-    cout << "Enter player 1 name :\n";
+    cout << "Enter player 1 name : ";
     getline(cin, sName1);
 
-    cout << "Enter player 2 name :\n";
+    cout << "\nEnter player 2 name : ";
     getline(cin, sName2);
 
-#if WIN32
+#if _WIN32
     system("cls");
 #endif
 
@@ -83,7 +83,7 @@ int main(void)
         break;
     }
 
-#if WIN32
+#if _WIN32
     system("cls");
 #endif
 
