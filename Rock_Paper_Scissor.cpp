@@ -1,5 +1,5 @@
 #include <iostream>
-#define ROCK 1
+#define ROCK 1 
 #define PAPER 2
 #define SCISSOR 3
 #define PLAYER1 1
