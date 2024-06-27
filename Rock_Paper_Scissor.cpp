@@ -10,7 +10,7 @@ using std::cout;
 using std::endl;
 using std::getline;
 using std::string;
-
+ 
 int rock_paper_scissor(int iPlayer1, int iPlayer2)
 {
     if (iPlayer1 == ROCK)
